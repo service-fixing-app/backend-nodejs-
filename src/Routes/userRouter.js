@@ -6,5 +6,6 @@ router.post('/signup', userController.signup);
 router.put('/editUser/:id', userController.editUser);
 router.get('/getAllUsers', userController.getAllUsers);
 router.get('/getOneUser/:id', userController.getOneUser);
+router.delete('/deleteUser/:id', userController.deleteUser);
 
 module.exports = router;
