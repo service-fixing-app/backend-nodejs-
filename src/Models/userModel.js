@@ -1,5 +1,6 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../Config/configSequelize');
+const bcrypt = require('bcrypt'); // Import the bcrypt library
 
 const User = sequelize.define('User', {
   fullname: {
@@ -19,5 +20,3 @@ const User = sequelize.define('User', {
 });
 
 module.exports = User;
-
-
